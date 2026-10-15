@@ -15,17 +15,17 @@ To write a python program to find the inverse of a matrix
 
 ## Program:
 
+import os
+os.environ["OPENBLAS_NUM_THREADS"]= "1"
+
 import numpy as np
 matrix = np.array([[6, 2, 3], [3, 1, 1], [10, 3, 4]])
 inverse = np.linalg.inv(matrix)
 print(inverse)
 
 ## Output:
+<img width="1218" height="781" alt="{4A1375B8-0DB5-4F30-8379-049219C779A3}" src="https://github.com/user-attachments/assets/6cd5a3dd-7081-4e6b-8979-ec91cc99c109" />
 
-[[-1. -1.  1.]
- [ 2.  6. -3.]
- [ 1. -2.  0.]]
- 
 ## Result:
 Thus the inverse of given matrix is successfully solved using python program
 
